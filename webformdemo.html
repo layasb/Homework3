@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IS445 HW2</title>
+    <style type="text/css">
+        h1 
+        {
+            text-align:center;
+            border-bottom: 7px solid #02fe00;
+            
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>Salarbehzadi, Laya Homework 3</h1>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="webformdemo.html">Web Form Demo</a>
+    <a href="aboutme.html">About Me</a>
+</nav>
+</header>
+<h2>Welcome to my Web Form</h2>
+<h3>A demo form for hotel room reservation</h3>
+    <form action="#" method="post">
+        
+<fieldset>
+
+<legend>Customer Information</legend>
+   
+<label>Full name:</label>
+<input type="text" name="full name" id="info_name" placeholder="Firstname Lastname" required="required" /><br />
+       
+<label>Email address: <input type="email" name="email" id="info_email" required="required" /></label>
+<br />
+    
+<label>Phone: <input type="tel" name="phone" id="info_phone" required="required"/></label>
+<br />
+</fieldset>
+            
+<fieldset>
+<legend>Room Information</legend>
+<label>Arrival date: <input type="date" name=" arivaldate" id="arrive_date" required="required" /></label>
+<br />
+    <label>Arrival time: <input type="time" name="arivaltime" id="arrive_time" required="required"/></label>
+    <br />
+    
+    <label>Select a room type</label>
+    <select name="roomType">
+        
+        <option value="standard">Standard</option>
+        <option value="economic">Economic</option>
+        <option value="Luxury" selected="selected">Luxury</option>
+    </select>
+    
+    <br />
+    <label>Number of nights: <input type="number" min="1" max="30" step="1" value="1" required="required" /></label>
+    
+    
+   
+    <br />
+    
+    <label>Number of guests:  <input type="number" min="0" max="3" step="1" value="0" required="required" /></label>
+   
+</fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label>Promo Code:</label>
+            <input type="text" name="promoCode" pattern="[A-Za-z0-9]{4}"
+                title="No special characters!!!" id="prom-code" maxlength="4" /><br />
+            <label>Special Notes</label>
+            <textarea name="comments" cols="40" rows="4" placeholder="Enter your special notes here"></textarea>
+        </fieldset>
+        <input type="reset" name="reset" value="Clear Form" />
+        <input type="submit" name="submit" value="Request Reservation" />
+        </form>
+    <textarea cols="40" name="comments" placeholder="Enter your special notes here" rows="4"></textarea>
+<footer>
+<h5>Contact Information 
+<br />
+<a href="mailto:layasb@yahoo.com"><i>Email: layasb@yahoo.com</i></a>
+<br />
+<i>Phone: (310)800-4369</i></h5>
+</footer>
+</body>
+</html>
